@@ -15,7 +15,7 @@ llm = ChatOpenAI()
 
 stdio_server_params = StdioServerParameters(
     command="python",
-    args=["/Users/edenmarco/GithubProjects/mcp-crash-course/servers/math_server.py"],
+    args=["/Users/laasanchezgi/Documents/projects/udemy/master_mcps/mcp-crash-course/servers/math_server.py"],
 )
 
 async def main():
