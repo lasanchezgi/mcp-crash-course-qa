@@ -22,5 +22,17 @@ def math_assistant_prompt() -> str:
         "and explain each step clearly."
     )
 
+@mcp.resource("math://formulas")
+def math_formulas() -> str:
+    """Provides common math formulas"""
+    return (
+        "Common Math Formulas:\n"
+        "- Area of circle: π * r²\n"
+        "- Pythagorean theorem: a² + b² = c²\n"
+        "- Area of rectangle: width * height\n"
+        "- Area of triangle: (base * height) / 2\n"
+        "- Sum of arithmetic series: n * (a1 + an) / 2"
+    )
+
 if __name__ == "__main__":
     mcp.run(transport="stdio")
